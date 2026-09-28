@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Catálogo de cursos — versão didática em HTML, CSS e JavaScript." />
+    <title>aprendaê | Catálogo de cursos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/estilo.css" />
+  </head>
+  <body>
+    <header class="topo">
+      <a class="marca" href="#inicio"><img src="assets/logo.svg" alt="" /> <span>aprenda<span>ê</span></span></a>
+      <nav aria-label="Navegação principal"><a href="#catalogo">Explorar cursos</a><a href="#sobre">Como funciona</a></nav>
+      <a class="botao botao-pequeno" href="#catalogo">Ver catálogo →</a>
+    </header>
+
+    <main id="inicio">
+      <section class="hero">
+        <div class="hero-conteudo">
+          <span class="etiqueta">● aprendizagem sem complicação</span>
+          <h1>Aprenda algo novo.<br /><em>Do seu jeito.</em></h1>
+          <p>Cursos curtos, claros e feitos para transformar curiosidade em prática — uma aula de cada vez.</p>
+          <a class="botao" href="#catalogo">Explorar cursos <span>→</span></a>
+        </div>
+        <div class="hero-ilustracao" aria-label="Ilustração abstrata sobre aprendizagem">
+          <div class="cartao-ilustracao"><span>aula 02</span><strong>✦</strong><div class="formas"><i></i><b></b><u></u></div><small>ideias em movimento<br /><span>aprenda fazendo</span></small></div>
+          <div class="bilhete bilhete-topo">✦ feito para você</div><div class="bilhete bilhete-baixo">✓ no seu ritmo</div>
+        </div>
+      </section>
+
+      <section class="catalogo" id="catalogo">
+        <div class="cabecalho-secao"><div><span class="etiqueta">catálogo de cursos</span><h2>Escolha por onde começar</h2></div><p>Conteúdos diretos ao ponto para você experimentar, praticar e continuar.</p></div>
+        <div class="ferramentas"><div class="filtros" role="tablist" aria-label="Filtrar cursos"><button class="ativo" data-categoria="Todos">Todos</button><button data-categoria="Tecnologia">Tecnologia</button><button data-categoria="Design">Design</button><button data-categoria="Negócios">Negócios</button><button data-categoria="Criatividade">Criatividade</button></div><label class="busca">⌕ <input id="campo-busca" type="search" placeholder="Buscar curso" /></label></div>
+        <p class="resultado" id="resultado"></p>
+        <div class="grade-cursos" id="grade-cursos"></div>
+      </section>
+
+      <section class="sobre" id="sobre"><div><span class="etiqueta">como funciona</span><h2>Aprender pode ser simples, leve e possível.</h2></div><div class="passos"><article><b>01</b><div><h3>Escolha um tema</h3><p>Encontre um assunto que desperte sua curiosidade e comece sem pressão.</p></div></article><article><b>02</b><div><h3>Assista e pratique</h3><p>Aulas curtas combinadas com desafios para transformar teoria em experiência.</p></div></article><article><b>03</b><div><h3>Continue explorando</h3><p>Um curso abre caminho para o próximo. O importante é seguir em movimento.</p></div></article></div></section>
+    </main>
+
+    <footer><a class="marca" href="#inicio"><img src="assets/logo.svg" alt="" /> <span>aprenda<span>ê</span></span></a><span>Projeto TDS UC 14 · 2026</span></footer>
+    <script src="js/app.js"></script>
+  </body>
+</html>
